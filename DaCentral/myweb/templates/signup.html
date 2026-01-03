@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Dacentral</title>
+{% include "temp.html"%}
+</head>
+<body>
+    <form method="POST" action="/signup/" class="col-3">
+    <h1>Signup</h1>
+    <label>Firstname:</label><input type="text" name="Firstname" id="Firstname" placeholder=""required>
+    <label>Lastname:</label><input type="text" name="Firstname" id="Firstname" placeholder=""required>
+    <label>Email:</label><input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+    <label>Password:</label><input type="password" name="Password" id="Password" placeholder="Enter your password" required>
+    <label>Confirm Password:</label><input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Re-enter your password"required>
+    <button type="submit" onsubmit="POST">Signup</button>
+</form>
+</body>
+
+
+{% include "footer.html" %}
+
+
+</html>
